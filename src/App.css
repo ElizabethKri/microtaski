@@ -1,0 +1,11 @@
+.App {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  height: max-content;
+}
+
+.App > div {
+  margin-right: 50px;
+}
+
