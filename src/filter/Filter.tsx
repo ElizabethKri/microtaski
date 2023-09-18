@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import {MoneyPropsType, NewComponent} from "./NewComponent";
+import {FilterType, MoneyPropsType, NewComponent} from "./NewComponent";
 
 
 const Filter = () => {
 
-    type FilterType = 'all' | 'RUBLS' | 'Dollars'
+
 
     const [money, setMoney]  = useState<MoneyPropsType[]>([
         { banknots: 'Dollars', value: 100, number: ' a1234567890' },
@@ -36,7 +36,7 @@ const Filter = () => {
 
     return (
         <div>
-            <NewComponent currentMoney={currentMoney} callback={() => onClickFilterHandler('RUBLS')}/>
+            <NewComponent currentMoney={currentMoney} callback={onClickFilterHandler} />
         </div>
 
     );

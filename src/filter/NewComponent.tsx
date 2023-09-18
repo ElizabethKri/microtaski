@@ -8,13 +8,15 @@ export type MoneyPropsType = {
 
 type CurrentMoneyPropsType = {
     currentMoney: MoneyPropsType[]
-    callback: (name: string) => void
+    callback: (name: FilterType) => void
 }
+
+export type FilterType = 'all' | 'RUBLS' | 'Dollars'
 
 export const NewComponent : React.FC <CurrentMoneyPropsType> = ({currentMoney, callback}) => {
 
-    const onClickFilterHandler = (name: string) => {
-        callback(name)
+    const onClickFilterHandler = (nameBtn: FilterType) => {
+        callback(nameBtn)
     }
 
     return (
