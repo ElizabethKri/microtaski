@@ -8,6 +8,11 @@ import Button1 from "./button/Button1";
 import Button2 from "./button/Button2";
 import UseState from "./useState/UseState";
 import Filter from "./filter/Filter";
+import Filter1 from "./filter/Filter1";
+import {Input} from "./input/Input";
+import {InputBtn} from "./components/InputBtn";
+import {ButtonInput} from "./components/ButtonInput";
+
 
 function App() {
 
@@ -26,7 +31,10 @@ function App() {
     return (
         <div>
 
-            <Filter/>
+
+            <Input/>
+
+            {/*<Filter1/>*/}
 
             {/*<UseState/>*/}
 
